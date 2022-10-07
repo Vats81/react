@@ -1,0 +1,12 @@
+.container-fluid {
+    color : white;
+    font-size: large;
+    
+}
+.nav-link {
+    color : black;
+    font-size: larger;
+    font-style: normal;
+    padding: 0.8em;
+    padding-left: 1em;
+}

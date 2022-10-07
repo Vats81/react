@@ -6,6 +6,11 @@ function RegistrationForm() {
     
     const [firstName, setFirstName] = useState(null);
     const [lastName, setLastName] = useState(null);
+    const [of,setOf] = useState(null);
+    const [age,setAge] = useState(null);
+    const [Pan,setPan] = useState(null);
+    const [noofshares,setnoofshares] = useState(null);
+    const [Amount,setAmount] = useState(null);
     const [email, setEmail] = useState(null);
     const [password,setPassword] = useState(null);
     const [confirmPassword,setConfirmPassword] = useState(null);
@@ -18,6 +23,27 @@ function RegistrationForm() {
         if(id === "lastName"){
             setLastName(value);
         }
+        if(id === "of")
+        {
+            setOf(value);
+        }
+        if(id === "age")
+        {
+            setAge(value);
+        }
+        if(id === "Pan")
+        {
+            setPan(value);
+        }
+        if(id === "noofshares")
+        {
+            setnoofshares(value);
+        }
+        if(id === "Amount")
+        {
+            setAmount(value);
+        }
+        
         if(id === "email"){
             setEmail(value);
         }
@@ -34,6 +60,11 @@ function RegistrationForm() {
         let obj = {
                 firstName : firstName,
                 lastName:lastName,
+                of:of,
+                age:age,
+                Pan : Pan,
+                noofshares:noofshares,
+                Amount :Amount,
                 email:email,
                 password:password,
                 confirmPassword:confirmPassword,
@@ -54,6 +85,26 @@ function RegistrationForm() {
                 <div className="lastname">
                     <label className="form__label" htmlFor="lastName">Last Name </label>
                     <input  type="text" name="" id="lastName" value={lastName}  className="form__input" onChange = {(e) => handleInputChange(e)} placeholder="LastName"/>
+                </div>
+                <div className="of">
+                    <label className="form_label" htmlFor = "of">S/o|D/o|W/o</label>
+                    <input type = "text" id = "of" value ={of} className ="form_input" onChange={(e) => handleInputChange(e)} placeholder ="S/o D/o W/o"/>
+                </div>
+                <div className="age">
+                    <label className="form_label" htmlFor = "of">Age</label>
+                    <input type = "text" id = "age" value ={age} className ="form_input" onChange={(e) => handleInputChange(e)} placeholder ="age"/>
+                </div>
+                <div className="Pan">
+                    <label className="form_label" htmlFor = "Pan">Pan</label>
+                    <input type = "text" id = "Pan" value ={Pan} className ="form_input" onChange={(e) => handleInputChange(e)} placeholder ="Pan"/>
+                </div>
+                <div className="noofshares">
+                    <label className="form_label" htmlFor = "noofshares">Age</label>
+                    <input type = "int" id = "noofshares" value ={noofshares} className ="form_input" onChange={(e) => handleInputChange(e)} placeholder ="noofshares"/>
+                </div>
+                <div className="Amount">
+                    <label className="form__label" htmlFor="Amount">Amount </label>
+                    <input  type="int" id="Amount" className="form__input" value={Amount} onChange = {(e) => handleInputChange(e)} placeholder="Amount"/>
                 </div>
                 <div className="email">
                     <label className="form__label" htmlFor="email">Email </label>
