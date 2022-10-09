@@ -108,8 +108,61 @@ body{
     z-index: -1;
     border-radius: 5px;
 }
-.row{
-    flex-direction: row;
+.Footer{
+    background-color: black;
+    color: whitesmoke;
+}
+.kode_eco_solar_pow {
+    float: left;
+    width: 100%;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 30px;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 30px;
+}
+
+.kode_eco_solar_pow img {
+    width: 100%;
+    transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+}
+
+.kode_eco_solar_pow:hover img {
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.kode_solar_caption {
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: -1px;
+}
+
+.kode_solar_caption h6 {
+    font-weight: bold;
+    padding: 14px 0 13px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+.kode_solar_caption p {
+    margin-bottom: 26px;
+    line-height: 24px;
+}
+
+.kode_solar_caption a {
+    display: inline-block;
+    padding: 4px 25px 5px 25px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #fff;
 }
 .kode_eco_solar i {
     transform: rotate(-46deg);
