@@ -1,6 +1,6 @@
 
 body{
-    background: #bdc3c7;  /* fallback for old browsers */
+    background: #f1f4f7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -18,7 +18,9 @@ body{
     text-align: left;
     padding: 20px 10px;
 }
-
+.serv{
+    padding-top: 2cm;
+}
 .form-body > *{
     padding: 5px;
 }
@@ -26,9 +28,21 @@ body{
 .form__label{
     width: 40%;
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .form_input{
     width: 60%;
+}
+.ico_img {
+    transform: rotate(-46deg);
+    -moz-transform: rotate(-46deg);
+    -webkit-transform: rotate(-46deg);
+    width: 40px;
+    height: 40px;
 }
 
 .footer{
@@ -39,4 +53,182 @@ body{
     color: white;
     width: 30%;
     height: 40%;
+}
+.coloumn{
+    width: 33%;
+    height :20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px solid #efefef;
+    padding: 28px 0 20px;
+}
+
+.icon{
+    width : 25%;
+    height: 10px;
+}
+.kode_eco_solar {
+    background-color: white;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px solid #efefef;
+    padding: 28px 0 20px;
+
+}
+
+.kode_eco_solar span {
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 70px;
+    margin-bottom: 38px;
+    background-color: #666666;
+}
+
+.kode_eco_solar span::before {
+    border: 1px solid #666666;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    z-index: -1;
+    border-radius: 5px;
+}
+.row{
+    flex-direction: row;
+}
+.kode_eco_solar i {
+    transform: rotate(-46deg);
+    -moz-transform: rotate(-46deg);
+    -webkit-transform: rotate(-46deg);
+}
+
+.kode_eco_solar h5 {
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 19px;
+    font-weight: bold;
+}
+
+.kode_eco_solar p {
+    margin-bottom: 24px;
+    line-height: 25px;
+}
+
+.kode_eco_support_caption a,
+.kode_eco_solar a {
+    display: inline-block;
+    padding: 7px 23px 7px 7px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #666666;
+    border-radius: 20px;
+}
+
+.kode_eco_solar:hover a {
+    color: #fff;
+}
+
+.kode_eco_support_caption .fa.fa-angle-right,
+.kode_eco_solar .fa.fa-angle-right {
+    background-color: #666666;
+    border-radius: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    width: 24px;
+    color: #fff;
+    margin-right: 10px;
+    color: #f7f7f7;
+}
+
+.kode_eco_solar:hover .fa.fa-angle-right {
+    background-color: #fff;
+    color: #747474;
+}
+
+.kode_eco_hdg {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: -10px;
+}
+
+.kode_eco_hdg h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.kode_eco_hdg h2:before {
+    border-bottom: 1px solid #ddd;
+    bottom: -18px;
+    content: "";
+    left: -129px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 114px;
+    z-index: -1;
+}
+
+.kode_eco_hdg h2:after {
+    border-top: 1px solid #ddd;
+    bottom: -18px;
+    content: "";
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: -132px;
+    width: 114px;
+}
+
+.kode_eco_hdg span {
+    font-weight: 20px;
+    background-color: #fff;
+    color: #ddd;
+    font-size: 25px;
+    position: relative;
+}
+
+.kode_eco_hdg span::after {
+    border-left: 1px solid;
+    bottom: 0;
+    content: "";
+    height: 12px;
+    left: 136px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+.kode_eco_hdg span::before {
+    border-right: 1px solid;
+    bottom: 0;
+    content: "";
+    height: 12px;
+    left: -110px;
+    position: absolute;
+    top: 8px;
 }

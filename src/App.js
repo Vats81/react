@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/header';
 import RegistrationForm from './components/registrationForm'
+import Body from './components/body';
 import Inside from './components/inside'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Navigation/navbar.js";
@@ -9,12 +10,12 @@ function app() {
  
   return (
     <div className="App">
-
-  
-      <Navbar />
       <Header/>
+      <Navbar />
+      
       <Inside/>
-      <RegistrationForm/>
+      <Body/>
+      
       
     </div>
 
