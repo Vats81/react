@@ -126,7 +126,8 @@ function RegistrationForm() {
                 </div>
             </div>
             <div className="footer">
-                <button onClick={()=>handleSubmit()} type="submit" class="btn" style={{backgroundColor : 'green'}}>Register</button>
+            <CustomLink to ="/login" >
+                <button onClick={()=>handleSubmit()} type="submit" class="btn" style={{backgroundColor : 'green'}}>Register</button></CustomLink>
             </div>
             <li className="nav-item">
     <CustomLink to ="/login" className="nav-link"> Already Registered <span style={{color: "blue"}} >Login</span></CustomLink></li>
