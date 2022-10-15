@@ -2,6 +2,10 @@ import React, {useState,setState} from 'react';
 import './style.css'
 import {database} from '../firebase'
 import {ref,push,child,update} from "firebase/database";
+import "./style.css";
+
+import { BrowserRouter, Route, Link, useResolvedPath, useMatch } from "react-router-dom";
+
 function RegistrationForm() {
     
     const [firstName, setFirstName] = useState(null);
@@ -76,6 +80,8 @@ function RegistrationForm() {
     }
 
     return(
+        <div className='abc'>
+            
         <div className="form">
             <div className="form-body">
                 <div className="username">
@@ -120,11 +126,27 @@ function RegistrationForm() {
                 </div>
             </div>
             <div className="footer">
-                <button onClick={()=>handleSubmit()} type="submit" class="btn">Register</button>
+                <button onClick={()=>handleSubmit()} type="submit" class="btn" style={{backgroundColor : 'green'}}>Register</button>
             </div>
+            <li className="nav-item">
+    <CustomLink to ="/login" className="nav-link"> Already Registered <span style={{color: "blue"}} >Login</span></CustomLink></li>
         </div>
-       
+        </div>
     )       
+}
+
+function CustomLink({to,children,...props})
+{
+  const resolvedPath = useResolvedPath(to);
+  const isActive =useMatch({path : resolvedPath.pathname, end:true})
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to = {to} { ...props}>
+        {children}
+      </Link>
+    </li>
+
+  )
 }
 
 export default RegistrationForm

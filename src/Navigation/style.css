@@ -8,5 +8,37 @@
     font-size: larger;
     font-style: normal;
     padding: 0.8em;
-    padding-left: 1em;
+   
+    border-bottom: ' 2px solid transparent';
+    border-top: ' 2px solid transparent';
 }
+.container-fluid{
+    height :43px;
+}
+.container-fluid button:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #fff;
+    top: 12px;
+    left: 0;
+    right: 0px;
+    margin: auto;
+    box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
+}
+.container-fluid button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    text-indent: -900em;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    padding: 0px;
+    border-radius: 0;
+    background-color: #7abf18;
+}
+
+
