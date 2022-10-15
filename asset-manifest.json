@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.11b304b3.css",
-    "main.js": "/react/static/js/main.74032104.js",
+    "main.css": "/react/static/css/main.e2aa7fc2.css",
+    "main.js": "/react/static/js/main.94d1e262.js",
     "static/js/787.29e7580b.chunk.js": "/react/static/js/787.29e7580b.chunk.js",
     "static/media/eco-banner-img02.jpg": "/react/static/media/eco-banner-img02.5e5fef1325d779ae561a.jpg",
     "static/media/power3.jpg": "/react/static/media/power3.cfefb3bf87ff44ba1658.jpg",
@@ -15,12 +15,12 @@
     "static/media/2.png": "/react/static/media/2.a3b14dd30cc5edc0a817.png",
     "static/media/logo.svg": "/react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/react/index.html",
-    "main.11b304b3.css.map": "/react/static/css/main.11b304b3.css.map",
-    "main.74032104.js.map": "/react/static/js/main.74032104.js.map",
+    "main.e2aa7fc2.css.map": "/react/static/css/main.e2aa7fc2.css.map",
+    "main.94d1e262.js.map": "/react/static/js/main.94d1e262.js.map",
     "787.29e7580b.chunk.js.map": "/react/static/js/787.29e7580b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11b304b3.css",
-    "static/js/main.74032104.js"
+    "static/css/main.e2aa7fc2.css",
+    "static/js/main.94d1e262.js"
   ]
 }
